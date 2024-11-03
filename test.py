@@ -2,15 +2,7 @@ import re
 
 from utils import file_read_json
 
-filename = 'users.json'
-
-
-def extract_status_name(s):
-    p = f'^(\w+)\(.+\)$'
-    match = re.search(p, s, re.I)
-    if match:
-        return match.group(1)
-    return s
+filename = 'data/users.json'
 
 
 def analyze1():
